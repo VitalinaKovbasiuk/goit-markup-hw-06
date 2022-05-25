@@ -300,6 +300,13 @@ footer {
   padding: 0;
 }
 
+/* form class */
+
+.contact-form {
+  display: inline;
+
+}
+
 /*#endregion*/
 
 /*#region SECTION PECULIARITIES*/
