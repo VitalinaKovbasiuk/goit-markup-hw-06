@@ -356,15 +356,45 @@ footer {
   outline: transparent;
 }
 
+.form-modal-input:focus~.warning {
+opacity: 1;
+}
+
+.form-modal-input:invalid~.error {
+opacity: 1;
+}
+
 .warning,
 .error {
   position: absolute;
-  opacity: 0;
-  /* bottom: -30px;
+  /* opacity: 0; */
+  bottom: -22px;
   left: 10px;
 
-  width: 100%;
-  display: block; */
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+
+  transition: 400ms ease-out;
+}
+
+.warning-icon,
+.error-icon {
+  display: inline-flex;
+  fill: currentColor;
+}
+
+.error {
+  color: #e22f37;
+  opacity: 0;
+}
+
+.warning {
+  color: #ffc039;
+  
+  /* opacity: 0; */
 }
 
 /* CHECKBOX STYLE */
@@ -383,9 +413,9 @@ footer {
   justify-content: center;
   /* display: inline-grid; */
 
-  outline: 2px solid #212121;
-  outline-offset: -2px;
-  border-radius: 2px;
+  outline: 2px solid rgba(33, 33, 33, 1);
+  /* outline-offset: -2px; */
+  border-radius: 1px;
   margin-right: 7px;
 
   transition: background-color 300ms ease-in;
