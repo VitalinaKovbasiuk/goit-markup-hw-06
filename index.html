@@ -86,6 +86,7 @@
             <div class="modal-wrapper">
               <button class="modal-btn" data-modal-close>
                 <svg
+                class="modal-btn-focus"
                   xmlns="http://www.w3.org/2000/svg"
                   viewbox="0 0 320 512"
                   width="18"
@@ -147,7 +148,7 @@
                     name="user-tel"
                   />
                   <span class="warning">
-                    Телефон должен состять из 12 символов в формате +38 0
+                    Введите номер телефона в формате +38 099 123 45 67
                     <svg class="warning-icon" width="15" height="15">
                       <use
                         href=".//images/svg-icon/form-icon/form-sprite.svg#icon-warning"
@@ -180,7 +181,7 @@
                     name="user-email"
                   />
                   <span class="warning">
-                    Необходим email в формате name@gmail.com
+                    Введите email в формате name@gmail.com
                     <svg class="warning-icon" width="15" height="15">
                       <use
                         href=".//images/svg-icon/form-icon/form-sprite.svg#icon-warning"
@@ -206,10 +207,11 @@
                 <label class="form-modal-group">
                   <span class="form-modal-label">Комментарий</span>
                   <textarea
+                  class="form-message"
                     name="form-message"
                     id="user-message"
                     cols="30"
-                    rows="10"
+                    rows="3"
                     placeholder="Введите текст"
                   ></textarea>
                 </label>
@@ -225,7 +227,8 @@
                     </svg>
                   </span>
                   <span class="form-policy-desc">
-                    Соглашаюсь с рассылкой и принимаю Условия договора
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="form-policy-link" href=""> Условия договора </a>
                   </span>
                 </label>
 
