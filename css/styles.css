@@ -507,7 +507,11 @@ fill: rgba(33, 150, 243, 1);
   fill: #ffffff;
   opacity: 0;
   transition: opacity var(--duration) var(--timing-function);
-  border: 1px solid rgba(33, 150, 243, 1);
+  
+}
+
+.checkbox:checked + .custom-checkbox {
+outline: 2px solid #2196f3;
 }
 
 .form-policy-desc {
