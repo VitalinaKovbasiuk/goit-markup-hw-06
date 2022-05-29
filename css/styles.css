@@ -304,7 +304,7 @@ footer {
 
 .modal-btn:hover .modal-btn-focus,
 .modal-btn:focus .modal-btn-focus {
-fill: rgba(33, 150, 243, 1);
+  fill: rgba(33, 150, 243, 1);
 }
 
 /* form class "modal-form"*/
@@ -451,7 +451,7 @@ fill: rgba(33, 150, 243, 1);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+  color: rgba(117, 117, 117, 0.5);
   transition: var(--duration) var(--timing-function);
 }
 
@@ -507,11 +507,10 @@ fill: rgba(33, 150, 243, 1);
   fill: #ffffff;
   opacity: 0;
   transition: opacity var(--duration) var(--timing-function);
-  
 }
 
 .checkbox:checked + .custom-checkbox {
-outline: 2px solid #2196f3;
+  outline: 2px solid #2196f3;
 }
 
 .form-policy-desc {
@@ -520,7 +519,6 @@ outline: 2px solid #2196f3;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  
 }
 
 .form-policy-link {
@@ -967,6 +965,10 @@ justify-content: center; */
   margin-right: 70px;
 }
 
+.footer-left {
+  margin-right: 93px;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1064,8 +1066,62 @@ justify-content: center; */
 
 /* footer-contact-form */
 
+.footer-form {
+  width: 570px;
+  
+}
+
+.footer-form-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+
+  margin-right: 12px;
+}
+
+.footer-form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-form-input {
   background-color: transparent;
+  width: 358px;
+   padding: 11px 11px 11px 36px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-buttom-order {
+  margin-top: 0;
+padding-left: 10px;
+border: transparent;
+outline: none;
+position: relative;
+}
+
+.form-icon {
+  fill: #ffff;
+  position: absolute;
+  bottom:13px;
+  right: 28px;
+
 }
 
 /*#endregion*/
