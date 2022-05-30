@@ -325,16 +325,19 @@ footer {
   display: block;
 }
 
-.form-modal-group:not(:last-child) {
+.form-modal-group {
   display: block;
   margin-bottom: 10px;
+}
+
+.form-modal-group:last-child {
+  margin-bottom: 20px;
 }
 
 .form-policy-group {
   display: block;
   margin-bottom: 30px;
-  margin-top: 20px;
-}
+  }
 
 .form-modal-group {
   position: relative;
