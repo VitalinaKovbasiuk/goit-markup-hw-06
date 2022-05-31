@@ -359,12 +359,6 @@ footer {
   transition: fill var(--duration) var(--timing-function);
 }
 
-.form-modal-group:hover .form-modal-input,
-.form-modal-group:focus .form-modal-input {
-  border: 1px solid rgba(33, 150, 243, 1);
-  transition: border-color var(--duration) var(--timing-function);
-}
-
 .form-modal-group:hover .form-message,
 .form-modal-group:focus .form-message {
   border: 1px solid rgba(33, 150, 243, 1);
@@ -401,12 +395,27 @@ footer {
   outline: transparent;
 }
 
+.form-modal-input:hover,
+.form-modal-input:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  transition: border-color var(--duration) var(--timing-function);
+}
+
 .form-modal-input:focus ~ .warning {
   opacity: 1;
 }
 
+.footer-form-input:focus + .form-modal-icon {
+  fill: var(--accent-color);
+}
+
 .form-modal-input:focus {
   border: 1px solid rgba(33, 150, 243, 1);
+  fill: var(--accent-color);
+}
+
+.form-modal-group:focus .form-modal-icon {
+  color: var(--accent-color);
 }
 
 .form-message:focus {
@@ -513,7 +522,7 @@ footer {
 .checkbox:hover + .custom-checkbox,
 .checkbox:focus + .custom-checkbox {
   outline: 2px solid #2196f3;
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
 }
 
 .checkbox:checked + .custom-checkbox .custom-checkbox-icon {
