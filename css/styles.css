@@ -359,7 +359,7 @@ footer {
   transition: fill var(--duration) var(--timing-function);
 }
 
-.form-modal-input:focus+.form-modal-icon {
+.form-modal-group:focus-within .form-modal-icon {
   fill: var(--accent-color);
 }
 
