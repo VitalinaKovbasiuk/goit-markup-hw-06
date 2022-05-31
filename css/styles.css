@@ -352,11 +352,15 @@ footer {
   transition: fill var(--duration) var(--timing-function);
 }
 
-.form-modal-group:hover .form-modal-icon,
-.form-modal-group:focus .form-modal-icon {
+.form-modal-group:hover  .form-modal-icon,
+.form-modal-group:focus  .form-modal-icon {
   cursor: pointer;
   fill: rgba(33, 150, 243, 1);
   transition: fill var(--duration) var(--timing-function);
+}
+
+.form-modal-input:focus+.form-modal-icon {
+  fill: var(--accent-color);
 }
 
 .form-modal-group:hover .form-message,
